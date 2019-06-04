@@ -7,10 +7,10 @@
  */
 
 
-namespace Crisen\AI\Tests\Baidu;
+namespace Waimao\AI\Tests\Baidu;
 
-use Crisen\AI\AI;
-use Crisen\AI\Tests\TestCase;
+use Waimao\AI\AI;
+use Waimao\AI\Tests\TestCase;
 
 abstract class BaseTest extends TestCase
 {

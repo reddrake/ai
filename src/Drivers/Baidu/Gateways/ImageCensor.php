@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Baidu\Gateways;
+namespace Waimao\AI\Drivers\Baidu\Gateways;
 
 
 class ImageCensor extends AbstractBaiduGateway
@@ -22,12 +22,12 @@ class ImageCensor extends AbstractBaiduGateway
             'rest', '2.0', 'antiporn', 'v1'
         ];
     }
-    
+
 
     /**
      * @param array $options
      * @return array
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function detect($options = [])
     {
@@ -38,12 +38,10 @@ class ImageCensor extends AbstractBaiduGateway
     /**
      * @param array $options
      * @return array
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function detectGif($options = [])
     {
         return $this->send('detect_gif', $options);
     }
-
-
 }

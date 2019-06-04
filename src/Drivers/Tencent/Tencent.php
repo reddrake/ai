@@ -6,11 +6,11 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Tencent;
+namespace Waimao\AI\Drivers\Tencent;
 
 
-use Crisen\AI\Contracts\DriverInterface;
-use Crisen\AI\Exceptions\Exception;
+use Waimao\AI\Contracts\DriverInterface;
+use Waimao\AI\Exceptions\Exception;
 
 
 class Tencent implements DriverInterface

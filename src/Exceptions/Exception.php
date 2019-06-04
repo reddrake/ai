@@ -6,11 +6,9 @@
  * description:
  */
 
-namespace Crisen\AI\Exceptions;
+namespace Waimao\AI\Exceptions;
 
 use Exception as BaseException;
 
 class Exception extends BaseException
-{
-
-}
+{ }

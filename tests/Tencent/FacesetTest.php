@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Tests\Tencent;
+namespace Waimao\AI\Tests\Tencent;
 
 
 class FacesetTest extends AbstractGatewayTest
@@ -49,6 +49,4 @@ class FacesetTest extends AbstractGatewayTest
         ]);
         $this->assertSuccess($res);
     }
-
-
 }

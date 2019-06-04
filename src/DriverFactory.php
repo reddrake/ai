@@ -7,10 +7,10 @@
  */
 
 
-namespace Crisen\AI;
+namespace Waimao\AI;
 
 
-use Crisen\AI\Exceptions\Exception;
+use Waimao\AI\Exceptions\Exception;
 
 class DriverFactory
 {
@@ -30,7 +30,5 @@ class DriverFactory
         }
 
         throw new Exception("driver [{$name}] not exist");
-
     }
-
 }

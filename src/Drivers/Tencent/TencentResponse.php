@@ -6,11 +6,11 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Tencent;
+namespace Waimao\AI\Drivers\Tencent;
 
 
-use Crisen\AI\Contracts\ResponseInterface;
-use Crisen\AI\Exceptions\Exception;
+use Waimao\AI\Contracts\ResponseInterface;
+use Waimao\AI\Exceptions\Exception;
 
 class TencentResponse implements ResponseInterface
 {
@@ -64,5 +64,4 @@ class TencentResponse implements ResponseInterface
         }
         return true;
     }
-
 }

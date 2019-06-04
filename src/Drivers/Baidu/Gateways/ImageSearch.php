@@ -7,7 +7,7 @@
  */
 
 
-namespace Crisen\AI\Drivers\Baidu\Gateways;
+namespace Waimao\AI\Drivers\Baidu\Gateways;
 
 
 class ImageSearch extends AbstractBaiduGateway
@@ -28,5 +28,4 @@ class ImageSearch extends AbstractBaiduGateway
             'Content-Type' => 'application/x-www-form-urlencoded'
         ];
     }
-    
 }

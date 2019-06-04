@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Tests\Tencent;
+namespace Waimao\AI\Tests\Tencent;
 
 
 class ImageTest extends AbstractGatewayTest
@@ -43,6 +43,4 @@ class ImageTest extends AbstractGatewayTest
         $res = $this->gateway->base64($this->imageBase64Code())->terrorism();
         $this->assertSuccess($res);
     }
-
-
 }

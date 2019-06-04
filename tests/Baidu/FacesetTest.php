@@ -7,9 +7,9 @@
  */
 
 
-namespace Crisen\AI\Tests\Baidu;
+namespace Waimao\AI\Tests\Baidu;
 
-use Crisen\AI\Drivers\Baidu\Gateways\AbstractBaiduGateway;
+use Waimao\AI\Drivers\Baidu\Gateways\AbstractBaiduGateway;
 
 class FacesetTest extends GatewayTest
 {
@@ -43,5 +43,4 @@ class FacesetTest extends GatewayTest
         $face = $this->driver->face();
         $this->assertInstanceOf(AbstractBaiduGateway::class, $face);
     }
-
 }

@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Tests\Baidu;
+namespace Waimao\AI\Tests\Baidu;
 
 
 class FacesetGroupTest extends GatewayTest
@@ -16,7 +16,7 @@ class FacesetGroupTest extends GatewayTest
     {
         return 'faceset.group';
     }
-    
+
     public function testGet()
     {
         $this->assertSuccess($this->gateway->get());

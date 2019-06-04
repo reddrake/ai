@@ -7,7 +7,7 @@
  */
 
 
-namespace Crisen\AI\Drivers\Baidu\Gateways;
+namespace Waimao\AI\Drivers\Baidu\Gateways;
 
 
 class Nlp extends AbstractBaiduGateway
@@ -18,7 +18,7 @@ class Nlp extends AbstractBaiduGateway
     {
 
         return [
-            'rpc', '2.0', 'nlp','v1'
+            'rpc', '2.0', 'nlp', 'v1'
         ];
     }
 
@@ -29,7 +29,7 @@ class Nlp extends AbstractBaiduGateway
      * @return $this
      */
     public function charset($coding)
-    {   
+    {
         $coding = strtoupper($coding);
         $rules  = ['UTF-8', 'GBK'];
 
@@ -65,11 +65,10 @@ class Nlp extends AbstractBaiduGateway
     public function keyword($title, $content, $options = [])
     {
         $data = array_merge([
-            'title'   => $title, 
+            'title'   => $title,
             'content' => $content
         ], $options);
 
         return $this->send('keyword', $data);
     }
-
 }

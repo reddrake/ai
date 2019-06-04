@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Tencent\Gateways;
+namespace Waimao\AI\Drivers\Tencent\Gateways;
 
 
 class Face extends AbstractTencentGateway
@@ -25,7 +25,7 @@ class Face extends AbstractTencentGateway
      * 人脸检测
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function detect(array $options = [])
     {
@@ -36,20 +36,19 @@ class Face extends AbstractTencentGateway
     /**
      * 多人脸检测
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function multiDetect($options = [])
     {
         return $this->send('face_detectmultiface', $options);
-
     }
 
     /**
      * 人脸关键点定位
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function shape(array $options = [])
     {
@@ -61,7 +60,7 @@ class Face extends AbstractTencentGateway
      * 跨年龄人脸识别
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function crossAge(array $options = [])
     {
@@ -73,7 +72,7 @@ class Face extends AbstractTencentGateway
      * 跨年龄人脸识别
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function compare(array $options = [])
     {
@@ -84,7 +83,7 @@ class Face extends AbstractTencentGateway
      * 人脸验证
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function verify(array $options = [])
     {
@@ -96,12 +95,10 @@ class Face extends AbstractTencentGateway
      * 人脸搜索
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function search(array $options = [])
     {
         return $this->send('face_faceidentify', $options);
     }
-
-
 }

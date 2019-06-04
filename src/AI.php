@@ -6,10 +6,10 @@
  * description:
  */
 
-namespace Crisen\AI;
+namespace Waimao\AI;
 
 
-use Crisen\AI\Exceptions\Exception;
+use Waimao\AI\Exceptions\Exception;
 
 
 class AI
@@ -57,6 +57,4 @@ class AI
         $app = new self(...$arguments);
         return $app->driver($method);
     }
-
-
 }

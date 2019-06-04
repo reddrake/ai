@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Contracts;
+namespace Waimao\AI\Contracts;
 
 interface  ResponseInterface
 {
@@ -22,8 +22,4 @@ interface  ResponseInterface
      * @return string
      */
     public function getErrMsg();
-
-
 }
-
-

@@ -6,12 +6,12 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Baidu\Gateways;
+namespace Waimao\AI\Drivers\Baidu\Gateways;
 
 
-use Crisen\AI\Drivers\Baidu\Baidu;
-use Crisen\AI\Drivers\Baidu\BaiduResponse;
-use Crisen\AI\Exceptions\Exception;
+use Waimao\AI\Drivers\Baidu\Baidu;
+use Waimao\AI\Drivers\Baidu\BaiduResponse;
+use Waimao\AI\Exceptions\Exception;
 
 
 abstract class AbstractBaiduGateway
@@ -179,4 +179,3 @@ abstract class AbstractBaiduGateway
         return $this->send($action, ...$arguments);
     }
 }
-

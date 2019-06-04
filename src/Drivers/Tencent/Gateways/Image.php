@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Tencent\Gateways;
+namespace Waimao\AI\Drivers\Tencent\Gateways;
 
 
 class Image extends AbstractTencentGateway
@@ -21,8 +21,8 @@ class Image extends AbstractTencentGateway
     /**
      * 模糊图片识别
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function fuzzy(array $options = [])
     {
@@ -33,8 +33,8 @@ class Image extends AbstractTencentGateway
     /**
      * 食物识别
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function food(array $options = [])
     {
@@ -44,8 +44,8 @@ class Image extends AbstractTencentGateway
     /**
      * 图片标签识别
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function tag(array $options = [])
     {
@@ -56,12 +56,11 @@ class Image extends AbstractTencentGateway
     /**
      * 暴恐图片识别
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function terrorism(array $options = [])
     {
         return $this->send('image_terrorism', $options);
     }
-
 }

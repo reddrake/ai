@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Baidu\Gateways;
+namespace Waimao\AI\Drivers\Baidu\Gateways;
 
 
 class FacesetGroup extends AbstractBaiduGateway
@@ -29,7 +29,7 @@ class FacesetGroup extends AbstractBaiduGateway
      * 用户组管理
      * @param array $options
      * @return array
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function add($options = [])
     {
@@ -40,7 +40,7 @@ class FacesetGroup extends AbstractBaiduGateway
      * 用户组删除
      * @param array $options
      * @return array
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function delete($options = [])
     {
@@ -52,7 +52,7 @@ class FacesetGroup extends AbstractBaiduGateway
      * 用户组列表
      * @param array $options
      * @return array
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function get($options = [])
     {
@@ -64,11 +64,10 @@ class FacesetGroup extends AbstractBaiduGateway
      * 获取用户列表
      * @param array $options
      * @return array
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function users($options = [])
     {
         return $this->send('getusers', $options);
     }
-
 }

@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Tencent\Gateways;
+namespace Waimao\AI\Drivers\Tencent\Gateways;
 
 
 class Vision extends AbstractTencentGateway
@@ -21,8 +21,8 @@ class Vision extends AbstractTencentGateway
     /**
      * 滤镜
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function imgFilter($options = [])
     {
@@ -32,8 +32,8 @@ class Vision extends AbstractTencentGateway
     /**
      * 看图说话
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function imgToText($options = [])
     {
@@ -44,8 +44,8 @@ class Vision extends AbstractTencentGateway
     /**
      * 场景识别
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function scener($options = [])
     {
@@ -55,8 +55,8 @@ class Vision extends AbstractTencentGateway
     /**
      * 物体识别
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function object($options = [])
     {
@@ -66,13 +66,11 @@ class Vision extends AbstractTencentGateway
     /**
      * 图片鉴黄
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function porn($options = [])
     {
         return $this->send('vision_porn', $options);
     }
-
-
 }

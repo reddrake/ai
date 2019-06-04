@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Baidu\Gateways;
+namespace Waimao\AI\Drivers\Baidu\Gateways;
 
 
 class Body extends AbstractBaiduGateway
@@ -26,5 +26,4 @@ class Body extends AbstractBaiduGateway
             'Content-Type' => 'application/x-www-form-urlencoded'
         ];
     }
-
 }

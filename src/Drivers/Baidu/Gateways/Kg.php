@@ -7,7 +7,7 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Baidu\Gateways;
+namespace Waimao\AI\Drivers\Baidu\Gateways;
 
 
 class Kg extends AbstractBaiduGateway
@@ -21,6 +21,4 @@ class Kg extends AbstractBaiduGateway
             'rest', '2.0', 'kg', 'v1'
         ];
     }
-    
-
 }

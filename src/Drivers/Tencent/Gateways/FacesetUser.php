@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Tencent\Gateways;
+namespace Waimao\AI\Drivers\Tencent\Gateways;
 
 
 class FacesetUser extends AbstractTencentGateway
@@ -23,7 +23,7 @@ class FacesetUser extends AbstractTencentGateway
      * 个体创建
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function add(array $options = [])
     {
@@ -35,7 +35,7 @@ class FacesetUser extends AbstractTencentGateway
      * 获取个体信息
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function get(array $options = [])
     {
@@ -47,7 +47,7 @@ class FacesetUser extends AbstractTencentGateway
      * 设置个体信息
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function update(array $options = [])
     {
@@ -59,7 +59,7 @@ class FacesetUser extends AbstractTencentGateway
      * 个体删除
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function delete(array $options = [])
     {
@@ -71,11 +71,10 @@ class FacesetUser extends AbstractTencentGateway
      * 获取人脸列表
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function faces(array $options = [])
     {
         return $this->send('face_getfaceids', $options);
     }
-
 }

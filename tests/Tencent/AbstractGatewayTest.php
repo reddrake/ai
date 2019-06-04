@@ -7,7 +7,7 @@
  */
 
 
-namespace Crisen\AI\Tests\Tencent;
+namespace Waimao\AI\Tests\Tencent;
 
 
 abstract class AbstractGatewayTest extends AbstractBaseTest

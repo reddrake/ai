@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Tencent\Gateways;
+namespace Waimao\AI\Drivers\Tencent\Gateways;
 
 
 class Ocr extends AbstractTencentGateway
@@ -21,7 +21,7 @@ class Ocr extends AbstractTencentGateway
      * 文字识别
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function general(array $options = [])
     {
@@ -33,7 +33,7 @@ class Ocr extends AbstractTencentGateway
      * 手写文字识别 中文 英文
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function handwriting(array $options = [])
     {
@@ -44,7 +44,7 @@ class Ocr extends AbstractTencentGateway
      * 身份证识别
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function idcard(array $options = [])
     {
@@ -55,7 +55,7 @@ class Ocr extends AbstractTencentGateway
      * 名片识别
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function bc(array $options = [])
     {
@@ -67,7 +67,7 @@ class Ocr extends AbstractTencentGateway
      * 营业执照识别
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function bizlicense(array $options = [])
     {
@@ -79,7 +79,7 @@ class Ocr extends AbstractTencentGateway
      * 银行卡识别
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function creditcard(array $options = [])
     {
@@ -91,7 +91,7 @@ class Ocr extends AbstractTencentGateway
      * 车牌识别
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function plate(array $options = [])
     {
@@ -103,12 +103,10 @@ class Ocr extends AbstractTencentGateway
      * 行驶证 驾驶证识别
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function driverlicense(array $options = [])
     {
         return $this->send('ocr_driverlicenseocr', $options);
     }
-
-
 }

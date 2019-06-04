@@ -7,7 +7,7 @@
  */
 
 
-namespace Crisen\AI\Drivers\Baidu\Gateways;
+namespace Waimao\AI\Drivers\Baidu\Gateways;
 
 
 class FacesetUser extends AbstractBaiduGateway
@@ -44,7 +44,7 @@ class FacesetUser extends AbstractBaiduGateway
      * 人脸注册
      * @param array $options
      * @return array
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function add($options = [])
     {
@@ -56,7 +56,7 @@ class FacesetUser extends AbstractBaiduGateway
      * 人脸更新
      * @param array $options
      * @return array
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function update($options = [])
     {
@@ -68,7 +68,7 @@ class FacesetUser extends AbstractBaiduGateway
      * @param string $src
      * @param string $dest
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function copy(string $src, string $dest)
     {
@@ -82,7 +82,7 @@ class FacesetUser extends AbstractBaiduGateway
      * 删除用户
      * @param array $options
      * @return array
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function delete($options = [])
     {
@@ -94,12 +94,10 @@ class FacesetUser extends AbstractBaiduGateway
      * 用户信息查询
      * @param array $options
      * @return array
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function get($options = [])
     {
         return $this->send('get', $options);
     }
-
-
 }

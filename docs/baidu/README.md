@@ -3,7 +3,7 @@
 ## 获取ai实例
 
 ~~~
-use Crisen\AI\Ai;
+use Waimao\AI\Ai;
 
 .....
 

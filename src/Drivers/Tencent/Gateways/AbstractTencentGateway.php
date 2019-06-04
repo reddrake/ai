@@ -6,13 +6,13 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Tencent\Gateways;
+namespace Waimao\AI\Drivers\Tencent\Gateways;
 
 
-use Crisen\AI\Client;
-use Crisen\AI\Drivers\Tencent\Tencent;
-use Crisen\AI\Drivers\Tencent\TencentResponse;
-use Crisen\AI\Exceptions\Exception;
+use Waimao\AI\Client;
+use Waimao\AI\Drivers\Tencent\Tencent;
+use Waimao\AI\Drivers\Tencent\TencentResponse;
+use Waimao\AI\Exceptions\Exception;
 
 abstract class AbstractTencentGateway
 {
@@ -128,5 +128,4 @@ abstract class AbstractTencentGateway
     {
         return $this->driver->sign($data);
     }
-
 }

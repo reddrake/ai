@@ -7,10 +7,10 @@
  */
 
 
-namespace Crisen\AI\Drivers\Baidu;
+namespace Waimao\AI\Drivers\Baidu;
 
 
-use Crisen\AI\Drivers\Baidu\Gateways\AbstractBaiduGateway;
+use Waimao\AI\Drivers\Baidu\Gateways\AbstractBaiduGateway;
 
 
 class Speech extends AbstractBaiduGateway
@@ -23,5 +23,4 @@ class Speech extends AbstractBaiduGateway
             'rest', '2.0', 'image-classify', 'v3'
         ];
     }
-    
 }

@@ -7,7 +7,7 @@
  */
 
 
-namespace Crisen\AI\Drivers\Baidu\Gateways;
+namespace Waimao\AI\Drivers\Baidu\Gateways;
 
 
 class Ocr extends AbstractBaiduGateway
@@ -27,5 +27,4 @@ class Ocr extends AbstractBaiduGateway
             'Content-Type' => 'application/x-www-form-urlencoded'
         ];
     }
-
 }

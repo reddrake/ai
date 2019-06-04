@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Tencent\Gateways;
+namespace Waimao\AI\Drivers\Tencent\Gateways;
 
 
 class Nlp extends AbstractTencentGateway
@@ -21,7 +21,7 @@ class Nlp extends AbstractTencentGateway
      * 分词
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function wordSeg(array $options = [])
     {
@@ -32,7 +32,7 @@ class Nlp extends AbstractTencentGateway
      * 词性
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function wordPos(array $options = [])
     {
@@ -44,7 +44,7 @@ class Nlp extends AbstractTencentGateway
      * 专有名词
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function wordNer(array $options = [])
     {
@@ -56,7 +56,7 @@ class Nlp extends AbstractTencentGateway
      * 同义词
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function wordSyn(array $options = [])
     {
@@ -67,7 +67,7 @@ class Nlp extends AbstractTencentGateway
      * 意图成分
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function wordCom(array $options = [])
     {
@@ -78,7 +78,7 @@ class Nlp extends AbstractTencentGateway
      * 情感分析
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function textPolar(array $options = [])
     {
@@ -90,7 +90,7 @@ class Nlp extends AbstractTencentGateway
      * 智能闲聊
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function textChat(array $options = [])
     {
@@ -101,7 +101,7 @@ class Nlp extends AbstractTencentGateway
      * 文本翻译
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function textTranslate(array $options = [])
     {
@@ -112,7 +112,7 @@ class Nlp extends AbstractTencentGateway
      * 语音翻译
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function speechTranslate(array $options = [])
     {
@@ -124,7 +124,7 @@ class Nlp extends AbstractTencentGateway
      * 图片翻译
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function imageTranslate(array $options = [])
     {
@@ -135,12 +135,10 @@ class Nlp extends AbstractTencentGateway
      * 语种识别
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function textDetect(array $options = [])
     {
         return $this->send('nlp_textdetect', $options);
     }
-
-
 }

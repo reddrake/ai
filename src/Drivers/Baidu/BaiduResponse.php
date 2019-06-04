@@ -6,10 +6,10 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Baidu;
+namespace Waimao\AI\Drivers\Baidu;
 
-use Crisen\AI\Contracts\ResponseInterface;
-use Crisen\AI\Exceptions\Exception;
+use Waimao\AI\Contracts\ResponseInterface;
+use Waimao\AI\Exceptions\Exception;
 
 class BaiduResponse implements ResponseInterface
 {

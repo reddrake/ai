@@ -7,7 +7,7 @@
  */
 
 
-namespace Crisen\AI\Drivers\Baidu\Gateways;
+namespace Waimao\AI\Drivers\Baidu\Gateways;
 
 
 class ImageClassify extends AbstractBaiduGateway
@@ -27,5 +27,4 @@ class ImageClassify extends AbstractBaiduGateway
             'Content-Type' => 'application/x-www-form-urlencoded'
         ];
     }
-
 }

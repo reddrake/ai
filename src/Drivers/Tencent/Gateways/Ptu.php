@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Tencent\Gateways;
+namespace Waimao\AI\Drivers\Tencent\Gateways;
 
 
 class Ptu extends AbstractTencentGateway
@@ -20,8 +20,8 @@ class Ptu extends AbstractTencentGateway
     /**
      * 滤镜
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function imgFilter($options = [])
     {
@@ -31,8 +31,8 @@ class Ptu extends AbstractTencentGateway
     /**
      * 人脸美妆
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function faceCosmetic($options = [])
     {
@@ -43,8 +43,8 @@ class Ptu extends AbstractTencentGateway
     /**
      * 人脸变妆
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function faceDecoration($options = [])
     {
@@ -54,8 +54,8 @@ class Ptu extends AbstractTencentGateway
     /**
      * 大头贴
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function faceSticker($options = [])
     {
@@ -65,12 +65,11 @@ class Ptu extends AbstractTencentGateway
     /**
      * 颜龄检测
      * @param array $options
-     * @return \Crisen\AI\Drivers\Tencent\TencentResponse
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @return \Waimao\AI\Drivers\Tencent\TencentResponse
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function faceAge($options = [])
     {
         return $this->send('ptu_faceage', $options);
     }
-
 }

@@ -7,7 +7,7 @@
  */
 
 
-namespace Crisen\AI\Tests\Baidu;
+namespace Waimao\AI\Tests\Baidu;
 
 
 abstract class GatewayTest extends BaseTest

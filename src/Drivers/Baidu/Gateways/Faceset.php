@@ -7,7 +7,7 @@
  */
 
 
-namespace Crisen\AI\Drivers\Baidu\Gateways;
+namespace Waimao\AI\Drivers\Baidu\Gateways;
 
 
 class Faceset extends AbstractBaiduGateway
@@ -31,7 +31,7 @@ class Faceset extends AbstractBaiduGateway
      * 获取用户人脸列表
      * @param array $options
      * @return array
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function get($options = [])
     {
@@ -42,12 +42,10 @@ class Faceset extends AbstractBaiduGateway
      * 人脸删除
      * @param array $options
      * @return array
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function delete($options = [])
     {
         return $this->send('delete', $options);
     }
-
-
 }

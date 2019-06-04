@@ -7,9 +7,9 @@
  */
 
 
-namespace Crisen\AI;
+namespace Waimao\AI;
 
-use Crisen\AI\Exceptions\Exception;
+use Waimao\AI\Exceptions\Exception;
 
 class Client
 {

@@ -7,11 +7,11 @@
  */
 
 
-namespace Crisen\AI\Tests;
+namespace Waimao\AI\Tests;
 
 
-use Crisen\AI\AI;
-use Crisen\AI\Contracts\DriverInterface;
+use Waimao\AI\AI;
+use Waimao\AI\Contracts\DriverInterface;
 
 
 class AITest extends TestCase
@@ -29,5 +29,4 @@ class AITest extends TestCase
         $ai = AI::tencent($config);
         $this->assertInstanceOf(DriverInterface::class, $ai);
     }
-
 }

@@ -7,10 +7,10 @@
  * description: 人脸识别库
  */
 
-namespace Crisen\AI\Drivers\Baidu\Gateways;
+namespace Waimao\AI\Drivers\Baidu\Gateways;
 
 
-use Crisen\AI\Exceptions\Exception;
+use Waimao\AI\Exceptions\Exception;
 
 class Face extends AbstractBaiduGateway
 {
@@ -45,7 +45,7 @@ class Face extends AbstractBaiduGateway
      * 人脸检测
      * @param array $options
      * @return array
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function detect($options = [])
     {
@@ -56,7 +56,7 @@ class Face extends AbstractBaiduGateway
      * 人脸对比
      * @param array $options
      * @return array
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function match($options = [])
     {
@@ -68,7 +68,7 @@ class Face extends AbstractBaiduGateway
      * 1:n 搜索
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function search($options = [])
     {
@@ -80,7 +80,7 @@ class Face extends AbstractBaiduGateway
      * m:n 搜索
      * @param $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function multiSearch($options = [])
     {
@@ -107,7 +107,7 @@ class Face extends AbstractBaiduGateway
      * 身份验证
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function personVerify($options = [])
     {
@@ -119,7 +119,7 @@ class Face extends AbstractBaiduGateway
      * 在线活体检测
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function faceVerify($options = [])
     {

@@ -7,10 +7,10 @@
  */
 
 
-namespace Crisen\AI\Tests\Baidu;
+namespace Waimao\AI\Tests\Baidu;
 
 
-use Crisen\AI\Drivers\Baidu\Gateways\AbstractBaiduGateway;
+use Waimao\AI\Drivers\Baidu\Gateways\AbstractBaiduGateway;
 
 class FaceTest extends GatewayTest
 {
@@ -62,7 +62,7 @@ class FaceTest extends GatewayTest
         ], 'face');
         $this->assertSuccess($response);
     }
-    
+
     public function testPersonVerify()
     {
         $response = $this->gateway->url($this->imageUrl())->personVerify([

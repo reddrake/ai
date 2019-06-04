@@ -7,7 +7,7 @@
  */
 
 
-namespace Crisen\AI\Tests;
+namespace Waimao\AI\Tests;
 
 
 use Mockery;

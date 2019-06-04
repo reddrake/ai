@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Tencent\Gateways;
+namespace Waimao\AI\Drivers\Tencent\Gateways;
 
 
 class Aai extends AbstractTencentGateway
@@ -21,7 +21,7 @@ class Aai extends AbstractTencentGateway
      * 语音合成
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function tts(array $options = [])
     {
@@ -32,7 +32,7 @@ class Aai extends AbstractTencentGateway
      * 关键词检索
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function detectKeyword(array $options = [])
     {
@@ -44,7 +44,7 @@ class Aai extends AbstractTencentGateway
      * 长语音识别
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function asrLong(array $options = [])
     {
@@ -56,12 +56,10 @@ class Aai extends AbstractTencentGateway
      * 语音识别
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function asr(array $options = [])
     {
         return $this->send('aai_asr', $options);
     }
-
-
 }

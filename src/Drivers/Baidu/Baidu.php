@@ -6,11 +6,11 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Baidu;
+namespace Waimao\AI\Drivers\Baidu;
 
-use Crisen\AI\Client;
-use Crisen\AI\Contracts\DriverInterface;
-use Crisen\AI\Exceptions\Exception;
+use Waimao\AI\Client;
+use Waimao\AI\Contracts\DriverInterface;
+use Waimao\AI\Exceptions\Exception;
 
 class Baidu implements DriverInterface
 {
@@ -114,7 +114,7 @@ class Baidu implements DriverInterface
         return $this->gateway;
     }
 
-    
+
     /**
      * @param $name
      * @param $arguments

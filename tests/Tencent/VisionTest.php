@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Tests\Tencent;
+namespace Waimao\AI\Tests\Tencent;
 
 
 class VisionTest extends AbstractGatewayTest
@@ -59,5 +59,4 @@ class VisionTest extends AbstractGatewayTest
         ]);
         $this->assertSuccess($res);
     }
-
 }

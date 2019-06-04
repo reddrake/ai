@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Tests\Baidu;
+namespace Waimao\AI\Tests\Baidu;
 
 
 class FacesetUserTest extends GatewayTest
@@ -32,7 +32,7 @@ class FacesetUserTest extends GatewayTest
 
     public function testCopy()
     {
-        $res = $this->gateway->copy('src','dest');
+        $res = $this->gateway->copy('src', 'dest');
         $this->assertSuccess($res);
     }
 
@@ -42,6 +42,4 @@ class FacesetUserTest extends GatewayTest
         $res = $this->gateway->delete();
         $this->assertSuccess($res);
     }
-
-
 }

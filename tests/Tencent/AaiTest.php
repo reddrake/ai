@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Tests\Tencent;
+namespace Waimao\AI\Tests\Tencent;
 
 
 class AaiTest extends AbstractGatewayTest
@@ -16,5 +16,4 @@ class AaiTest extends AbstractGatewayTest
     {
         return 'aai';
     }
-
 }

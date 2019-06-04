@@ -7,7 +7,7 @@
  */
 
 
-namespace Crisen\AI\Contracts;
+namespace Waimao\AI\Contracts;
 
 
 interface  DriverInterface
@@ -20,6 +20,4 @@ interface  DriverInterface
      * @return mixed
      */
     public function gateway($name);
-
-
 }

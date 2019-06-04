@@ -6,12 +6,12 @@
  * description:
  */
 
-namespace Crisen\AI\Tests\Tencent;
+namespace Waimao\AI\Tests\Tencent;
 
 
-use Crisen\AI\AI;
-use Crisen\AI\Drivers\Tencent\TencentResponse;
-use Crisen\AI\Tests\TestCase;
+use Waimao\AI\AI;
+use Waimao\AI\Drivers\Tencent\TencentResponse;
+use Waimao\AI\Tests\TestCase;
 
 abstract class AbstractBaseTest extends TestCase
 {

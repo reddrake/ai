@@ -6,7 +6,7 @@
  * description:
  */
 
-namespace Crisen\AI\Drivers\Tencent\Gateways;
+namespace Waimao\AI\Drivers\Tencent\Gateways;
 
 
 class Faceset extends AbstractTencentGateway
@@ -22,7 +22,7 @@ class Faceset extends AbstractTencentGateway
      * 增加人脸
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function add(array $options = [])
     {
@@ -34,7 +34,7 @@ class Faceset extends AbstractTencentGateway
      * 删除人脸
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function delete(array $options = [])
     {
@@ -46,12 +46,10 @@ class Faceset extends AbstractTencentGateway
      * 获取人脸信息
      * @param array $options
      * @return mixed
-     * @throws \Crisen\AI\Exceptions\Exception
+     * @throws \Waimao\AI\Exceptions\Exception
      */
     public function get(array $options = [])
     {
         return $this->send('face_getfaceinfo', $options);
     }
-
-
 }
