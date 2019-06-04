@@ -1,3 +1,5 @@
+# 基于crisen/laravel-ai 做的衍生版本，如要使用BAIDU_AI，请使用crisen/laravel-ai的包
+
 # 优雅的AI客户端调用
 
 官方的sdk用起来的感觉实在是太忧伤了,换一种更好的调用方式吧
@@ -19,16 +21,16 @@
 ## 安装
 
 ~~~
-composer require  "crisen/ai":"^1.0.0"
+composer require  "waimao/ai":"^1.0.0"
 ~~~
 
-laravel框架,请点击[这里](https://github.com/crisenchou/laravel-ai)
+laravel框架,请点击[这里](https://github.com/reddrake/laravel-ai)
 
 ## 使用示例
 
 ~~~php
 
-use Crisen\AI\AI;
+use Waimao\AI\AI;
 
 ...
 
