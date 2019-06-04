@@ -1,4 +1,4 @@
-# 基于crisen/laravel-ai 做的衍生版本，如要使用BAIDU_AI，请使用crisen/laravel-ai的包
+# 基于crisen/ai 做的衍生版本，如要使用BAIDU_AI，请使用crisen/ai的包
 
 # 优雅的AI客户端调用
 
