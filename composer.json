@@ -1,5 +1,5 @@
 {
-  "name": "crisen/ai",
+  "name": "waimao/ai",
   "description": "优雅的ai客户端",
   "keywords": ["baidu-ai", "tencent-ai", "ai client"],
   "type": "librarylibrary",
@@ -23,12 +23,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Crisen\\AI\\": "src"
+      "Waimao\\AI\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Crisen\\AI\\Tests\\": "tests"
+      "Waimao\\AI\\Tests\\": "tests"
     }
   },
   "minimum-stability": "dev"
